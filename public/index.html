@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Meerkat | The AI Development platform for everyone!</title>
+  <style>
+    body {
+      background-color:  #FFEDD8;
+      overflow: hidden;
+    }
+    header {
+      font-family: Helvetica;
+      width: 100%;
+      opacity: 100%;
+      position: relative;
+      background-color: white;
+      border-radius: 5px;
+      justify-content: start;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sign-up-btn {
+      font-family: Helvetica;
+      font-size: 20px;
+      background-color: #7D6F52;
+      color: #ffedd8;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+
+    .log-in-btn {
+      font-family: Helvetica;
+      font-size: 20px;
+      color: #7D6F52;
+      background-color: #ffedd8;
+      border: solid 3px #7D6F52;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+  </style>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="Meerkat.svg">
+</head>
+<body>
+  <header>
+    <img src="Meerkat.svg" alt="Meerkat Logo" width="50" height="50" >
+    </header>
+    <div style="display: flex; align-items: center; justify-content: center; height: 100vh; font-family: Helvetica;">
+      <h1 style="margin-right: 10px; color:#7D6F52;">Don't have an account?</h1>
+      <button class="sign-up-btn">Sign Up</button>
+      <h1 style="margin-left: 10px; color:#7D6F52;">Or</h1>
+      <button class="log-in-btn">Log In</button>
+    </div>
+  <app-root></app-root>
+</body>
+<script>
+  const signUpBtn = document.querySelector('.sign-up-btn');
+  signUpBtn.addEventListener('click', () => {
+    window.location.href = 'sign-up-login.html';
+  });
+   const logInBtn = document.querySelector('.log-in-btn');
+  logInBtn.addEventListener('click', () => {
+    window.location.href = 'sign-up-login.html';
+  });
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meerkat | Signup and Login</title>
+  <style>
+    body {
+      background-color: #FFEDD8;
+      font-family: Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #7D6F52;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #7D6F52;
+      color: #FFEDD8;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5a4a3a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="Meerkat.svg" alt="Meerkat Logo" width="50" height="50">
+    <h1>Meerkat</h1>
+    <form id="signup-form">
+      <h2>Signup</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Signup</button>
+    </form>
+    <form id="login-form">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
